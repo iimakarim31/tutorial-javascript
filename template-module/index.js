@@ -1,2 +1,8 @@
-console.log("Hello from console");
-alert("Hello from index.js file");
+/* Operator Aritmatika */
+// Penjumlahan
+let x = 5;
+let y = 10;
+let sum = x + y; // output 15
+
+console.log(sum, typeof sum);
+// Pengurangan
