@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Access</title>
+  </head>
+  <body>
+    <h1 id="title">Hello World</h1>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, nisi
+      reiciendis. Praesentium totam eveniet officia aperiam culpa velit
+      assumenda placeat neque tempore recusandae, modi ullam quisquam
+      doloremque, explicabo voluptate magnam.
+    </p>
+    <ul>
+      <li class="text">item 1</li>
+      <li class="text">item 2</li>
+      <li>item 3</li>
+    </ul>
+    <script>
+      // getElementById
+      const title = document.getElementById("title");
+      console.log(title);
+      // getElementByClassName
+      const text = document.getElementsByClassName("text");
+      //console.log(text[1]);
+      //getElementBytagName
+      const li = document.getElementsByTagName("l1");
+      console.log(li);
+      // QuerySelector
+      const liText = document.querySelector("li.text");
+      console.log(liText);
+      //querySelectorAll
+      const all = document.querySelectorAll("li.text");
+      console.log(all);
+    </script>
+  </body>
+</html>
