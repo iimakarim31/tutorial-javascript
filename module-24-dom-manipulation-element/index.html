@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM MAnipulation Element</title>
+    <style>
+      .bg-red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>title</h1>
+      <p>ini teks</p>
+    </div>
+    <p id="paragrap">
+      ini paragrap Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Sequi voluptas modi ducimus quas quaerat, ab harum, fugit vero tempore
+      maiores voluptates fuga magni consequuntur beatae quis iste assumenda
+      cupiditate cumque!
+    </p>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+    <script>
+      // //mengubah konten
+      // // 1. menggunakan element.textContent
+      // const paragrap = document.getElementById("paragrap");
+      // //console.log(paragrap);
+      // paragrap.textContent = "ini new paragraph";
+      // // 2. element.innerHTML
+      // paragrap.innerHTML = "ini paragraph dengan inner HTML";
+      // const container = document.getElementById("container");
+      // container.innerHTML =
+      //   "<h1>ini berubah menjadi content baru dengan tagname baru</h1>";
+
+      // manipulasi atrribut
+      const paragrap = document.getElementById("paragrap");
+      console.log(paragrap);
+      paragrap.setAttribute("class", "bg-red");
+
+      //manipulasi style
+      const li = document.querySelectorAll("li");
+      console.log(li);
+      li[2].style.fontSize = "32px";
+    </script>
+  </body>
+</html>
